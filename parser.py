@@ -49,7 +49,7 @@ plt.suptitle(graph_title)  # Add a title to the entire figure
 # Line plot
 plt.subplot(2, 1, 1)  # 2 rows, 1 column, 1st subplot
 plt.plot(range(1, len(lengths) + 1), lengths, marker='o', linestyle='-')
-plt.title('Gene Lengths')
+plt.title(input("Enter the title for the line plot: "))
 plt.xlabel(x_axis_title_line_plot)  # Use user input for x-axis title
 plt.ylabel(y_axis_title_line_plot)  # Use user input for y-axis title
 plt.grid(True)
@@ -57,7 +57,7 @@ plt.grid(True)
 # Histogram
 plt.subplot(2, 1, 2)  # 2 rows, 1 column, 2nd subplot
 n, bins, patches = plt.hist(lengths, bins=30, color='skyblue', edgecolor='black')
-plt.title('Distribution of Gene Lengths')
+plt.title(input("Enter the title for the histogram: "))
 plt.xlabel(x_axis_title_histogram)  # Use user input for x-axis title
 plt.ylabel(y_axis_title_histogram)  # Use user input for y-axis title
 plt.grid(True)
